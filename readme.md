@@ -5,7 +5,9 @@ In some cases it might be handy if you could put on an outline on some points in
 ![Example](/example.png)
 
 It is relatively easy to use the `selectpoints()` function, use this by default, where the second variable should be a list of your point coordinates:
+
 	selectpoints(ax, points)
+
 However, there are some additional parameters:
 * `radius`: 
 * `path_type`: how polygon points are connected (possible values: `matplotlib.path.Path.LINETO`, `matplotlib.path.Path.CURVE3`, or `matplotlib.path.Path.CURVE4`) 
