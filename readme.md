@@ -17,6 +17,8 @@ However, there are some additional parameters:
 * `fill`: fill the polygon or not
 * `js`: polygon line join style
 
+The `return` value is the center coordinate and the largest distance from the center to the shape points.
+
 You can also play around with the example.py to test its features.
 
 Any comments or suggestions? Contact me. Improvements are also welcome as this was written mainly in a mainly quick-and-dirty approach. :)

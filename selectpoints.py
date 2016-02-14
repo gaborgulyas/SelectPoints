@@ -2,6 +2,8 @@
 
 import matplotlib
 import math
+import numpy as np
+from scipy.spatial.distance import cdist
 
 def selectpoints(ax, points, radius = .1, path_type=matplotlib.path.Path.LINETO, ec='b', ls='-', lw=2, fc='g', a=.5, fill=True, js='round'):
 	# Add "bounding box" to each point
@@ -61,3 +63,7 @@ def selectpoints(ax, points, radius = .1, path_type=matplotlib.path.Path.LINETO,
 	mypath = matplotlib.path.Path(verts, codes)
 	patch = matplotlib.patches.PathPatch(mypath, edgecolor=ec, linestyle=ls, linewidth=lw, facecolor=fc, fill=fill, alpha=a, joinstyle=js)
 	ax.add_patch(patch)
+
+	# Calculate shape radius
+	r = max(cdist(np.array([[cx, cy]]), np.array(border)[:,:2], 'euclidean')[0].tolist())
+	return [cx, cy], r

@@ -14,7 +14,9 @@ for ix in range(N):
 
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
-selectpoints(ax, pts, radius=.05, ec='r', fill=False)
+c, r = selectpoints(ax, pts, radius=.05, ec='r', fill=False)
+print "center:", c
+print "radius:", r
 
 plt.scatter(x, y, s=30, c=colors, alpha=0.5)
 plt.savefig("example.png")
