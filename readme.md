@@ -8,7 +8,7 @@ It is relatively easy to use the `selectpoints()` function, use this by default,
 	selectpoints(ax, points)
 However, there are some additional parameters:
 * `radius`: 
-* `path_type`: how polygon points are connected (`matplotlib.path.Path.LINETO, `matplotlib.path.Path.CURVE3`, or `matplotlib.path.Path.CURVE4`) 
+* `path_type`: how polygon points are connected (possible values: `matplotlib.path.Path.LINETO`, `matplotlib.path.Path.CURVE3`, or `matplotlib.path.Path.CURVE4`) 
 * `ec`: outline color
 * `ls`: line style string
 * `lw`: line widht
