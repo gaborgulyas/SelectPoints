@@ -1,4 +1,8 @@
+##
 # Copyright (c) 2016, Gabor Gyorgy Gulyas
+# Email: gulyas@pet-portal.eu
+# Web: gulyas.info
+##
 
 import matplotlib
 import math
