@@ -15,9 +15,6 @@ def selectpoints(ax, points, radius = .1, path_type=matplotlib.path.Path.LINETO,
 	for ix in range(len(points)):
 		for a in [0]+[(2*math.pi*x)/16 for x in range(1,16)]:
 			points_.append([points[ix][0] + radius * math.cos(a), points[ix][1] + radius * math.sin(a)])
-		# for i in [-1, 1]:
-		# 	for j in [-1, 1]:
-		# 		points_.append([points[ix][0] + i*radius, points[ix][1] + j*radius])
 
 	points = points_
 
