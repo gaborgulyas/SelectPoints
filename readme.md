@@ -14,7 +14,7 @@ However, there are some additional parameters:
 * `ec`: outline color
 * `ls`: line style string
 * `lw`: line widht
-* `fc`: fill color 
+* `fc`: fill color
 * `a`: alpha
 * `fill`: fill the polygon or not
 * `js`: polygon line join style
