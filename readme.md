@@ -15,8 +15,9 @@ However, there are some additional parameters:
 * `ls`: line style string
 * `lw`: line widht
 * `fc`: fill color
-* `a`: alpha
-* `fill`: fill the polygon or not
+
+* `a`: alpha
+* `fill`: fill the polygon or not
 * `js`: polygon line join style
 
 The `return` value is the center coordinate and the largest distance from the center to the shape points.
