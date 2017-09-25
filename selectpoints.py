@@ -13,8 +13,8 @@ def selectpoints(ax, points, radius = .1, path_type=matplotlib.path.Path.LINETO,
 	# Add "bounds" to each point
 	points_ = []
 	for ix in range(len(points)):
-		for a in [0]+[(2*math.pi*x)/16 for x in range(1,16)]:
-			points_.append([points[ix][0] + radius * math.cos(a), points[ix][1] + radius * math.sin(a)])
+		for _ in [0]+[(2*math.pi*x)/16 for x in range(1,16)]:
+			points_.append([points[ix][0] + radius * math.cos(_), points[ix][1] + radius * math.sin(_)])
 
 	points = points_
 
@@ -64,6 +64,7 @@ def selectpoints(ax, points, radius = .1, path_type=matplotlib.path.Path.LINETO,
 
 	codes, verts = zip(*path_data)
 	mypath = matplotlib.path.Path(verts, codes)
+	print ec, ls, lw, fc, fill, a, js
 	patch = matplotlib.patches.PathPatch(mypath, edgecolor=ec, linestyle=ls, linewidth=lw, facecolor=fc, fill=fill, alpha=a, joinstyle=js)
 	ax.add_patch(patch)
 
